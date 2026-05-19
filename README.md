@@ -191,7 +191,7 @@ Minimal-IDS/
 ## ▶️ Getting Started
 
 ```bash
-git clone https://github.com/Him99224/Minimal-IDS.git
+git clone https://github.com/HitarthBabel/Minimal-IDS.git
 cd Minimal-IDS
 
 python -m venv .venv
