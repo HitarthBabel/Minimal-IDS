@@ -34,6 +34,11 @@ security = HTTPBearer(auto_error=False)
 
 # Mount static assets for dashboard
 app.mount("/static", StaticFiles(directory="static"), name="static")
+from fastapi.responses import RedirectResponse
+
+@app.get("/")
+def root():
+    return RedirectResponse(url="/static/index.html")
 
 USERS: dict[str, dict[str, str]] = {
     "alice": {"id": "user-1", "password": "password123", "role": "user"},
